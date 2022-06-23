@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: aliceblue;
+}
+
+.container {
+  width: 1200px;
+  margin: 100px auto;
+}
+
+h1.store {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2rem auto;
+  font-size: 3rem;
+}
+
+#products {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ text-align: center;
+}
+
+.items {
+  margin: 1rem;
+  padding: 1rem;
+  flex-basis: 25%;
+}
+
+.items:hover {
+  background-color: white;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.items img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.items img:hover {
+box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.4);
+}
+
+.title a {
+  color: black;
+  text-decoration: none;
+}
+
+.title h1 {
+  margin-bottom: 2rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.thumbnail {
+  position: relative;
+}
+
+.discount {
+  background-color: rgb(4, 186, 186);
+  display: inline-block;
+  padding: 5px 10px;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.price {
+  margin: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.btn {
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  border: none;
+  background-color: #e84a5f;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover, .btnPost:hover {
+  background-color: rgb(4, 186, 186);
+}
+
+/* Post */
+#post {
+  text-align: center;
+}
+
+.navigation {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.navigation a, .backLink a{
+  padding: 0 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.navigation a:hover,
+.backLink a:hover {
+  color: #e84a5f;
+}
+
+.backLink a {
+  padding: 0;
+}
+
+h1.postTitle {
+  text-align: center;
+  margin: 2rem auto;
+  font-size: 3rem;
+}
+
+/* .images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} */
+
+.imgPost {
+  display: inline-block;
+  width: 360px;
+  height: 300px;
+  object-fit: cover;
+  background-color: #2f9599;
+  margin: 1rem;
+  max-width: 49%;
+}
+
+.order {
+  text-align: center;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #c9c9c9;
+  width: fit-content;
+  margin: 2rem auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: center;
+  gap: 1rem;
+}
+
+.order:hover {
+  border-color: rgb(116, 116, 116);
+}
+
+.order > .price {
+  margin: 1rem;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.rating {
+  width: 200px;
+  background-color: #2f9599;
+  display: block;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  padding: 1rem 0;
+  margin: 0 auto 2rem;
+}
+
+.discountPost {
+  position: static;
+}
