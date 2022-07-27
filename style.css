@@ -9,11 +9,13 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: aliceblue;
+  margin: 0 2rem;
 }
 
 .container {
   width: 1200px;
   margin: 100px auto;
+  max-width: 100%;
 }
 
 h1.store {
@@ -24,9 +26,8 @@ h1.store {
 }
 
 #products {
- display: flex;
- flex-wrap: wrap;
- justify-content: space-between;
+display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
  text-align: center;
 }
 
@@ -78,7 +79,7 @@ transition: all 1s ease-out;
   font-weight: 600;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 18px;
   font-size: 1.2rem;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
@@ -155,8 +156,8 @@ h1.postTitle {
   width: 360px;
   height: 300px;
   object-fit: cover;
-  background-color: #2f9599;
-  margin: 1rem;
+  margin: 1rem auto;
+  padding: 1rem;
   max-width: 49%;
 }
 
@@ -167,6 +168,7 @@ h1.postTitle {
   border-radius: 10px;
   border: 1px solid #c9c9c9;
   width: fit-content;
+  max-width: 100%;
   margin: 2rem auto 0;
   display: flex;
   justify-content: space-between;
@@ -202,4 +204,22 @@ h1.postTitle {
 
 .discountPost {
   position: static;
+}
+
+@media screen  and (max-width: 500px) {
+  .discount {
+    right: 33px;
+  }
+  .order {
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
+  }
+}
+@media screen  and (max-width: 370px) {
+  .discount {
+    right: 18px;
+  }
 }
